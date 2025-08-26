@@ -80,3 +80,60 @@ let과 const가 없었을때 쓰던 선언방식.(구버전)
 > 저자는 새로운 방식(let,const)을 선호함.
 
 ---
+
+# 2.4 booleans
+
+## true // false
+```js
+let a = true; // 참
+let b = false // 거짓
+```
+
+## null // undefined
+```js
+let a = null;
+let b = undefined;
+```
+
+null -> 값이 없음을 알리기 위해 의도적으로 채운값.
+undefined -> 변수선언은 됐는데, 값이 없음.
+
+# 2.5 Array
+
+## 선언
+[]으로 감싸고, ','로 데이터 구분.
+```js
+const a = "a";
+const b = "b";
+const c = "c";
+const d = "d";
+const e = "e"; 
+// 이런식으로 하면 귀찮고 비효율적.
+
+const alphabet = ['a','b','c','d','e'];
+```
+
+## Array 다루기
+### 특정값 꺼내기
+Array 변수명 뒤에 [0],[1].. 을 붙여서 데이터를 꺼내올 수 있음.
+
+```js
+const alphabet = ['a','b','c','d','e'];
+
+console.log(alphabet[0]);
+```
+### 특정값 바꾸기
+변수[index] = 데이터;
+```js
+alphabet[0] = 'aa';
+```
+
+### 값 추가
+변수.push(데이터);
+
+```js
+alphabet.push('f');
+```
+
+---
+
